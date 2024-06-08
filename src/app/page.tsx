@@ -40,7 +40,11 @@ export default function Home() {
 
       <h2>XML</h2>
       {xml.map((item, index) => (
-        <div key={index}>{JSON.stringify(item)}</div>
+        <div key={index}>
+          <p>
+            {item?._} (start: {item?.$?.start}, dur: {item?.$?.dur})
+          </p>
+        </div>
       ))}
     </div>
   );
